@@ -1,0 +1,56 @@
+
+<div class="cuerpo">
+    <div class="padre">
+        <header class="header">
+            
+        </header>
+        <div class="logo-container">
+            <a href="/pagina" class="aa">
+                <img src="./img/logooo-removebg-preview.png" alt="Logo" class="logo-img">
+            </a>
+        </div>
+        <h1 class="titulo">Registro de gatos</h1>
+        <div class="recuadros">
+            <div class="contenido-recuadro">
+                <form class="formulario" action="">
+                    <label for="">Nombre:</label>
+                    <input type="text">
+                    <label for="">Edad:</label>
+                    <input type="number">
+                    <label for="">Genero:</label>
+                    <select name="" id="">
+                        <option value="" disabled selected></option>
+                        <option value="">Masculino</option>
+                        <option value="">Femenino</option>
+                    </select>
+                    <label for="">Raza:</label>
+                    <input type="text">
+                    <input type="image" class="boton" src="./img/btn_enviar.png" alt="submit">
+                </form>
+            </div>
+            <div class="imagen">
+                <div class="fondo">
+                    <input type="file" id="seleccionarImagen" name="seleccionarImagen" accept="image/*" (change)="previsualizarImagen($event)">    
+                    <img class="visualizador" [src]="imagenURL" alt="Imagen de un gato" id="imagenPrevisualizacion">
+                </div>
+                <label for="seleccionarImagen" class="boton_img">
+                    <p>Seleccionar imagen</p>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="pie">
+            <div class="contenido_pie">
+                <h4>Email</h4>
+                <p>refumiaugmail.com</p>
+            </div>
+            <div class="contenido_pie">
+                <h4>Ubicacion</h4>
+                <p>Imaginalandia</p>
+            </div>
+        </div>
+        <h2 class="titulo_final">© RefuMiau Oficial</h2>
+    </footer>
+</div>
